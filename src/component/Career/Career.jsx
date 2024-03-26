@@ -36,7 +36,18 @@ function Career() {
           </button>
         </div>
       </div>
-      
+      <div>
+        <div>
+          <h3>Grow your career</h3>
+          <p>Shape your future</p>
+          <button>Tell me more</button>
+        </div>
+        <div>
+          <h3>Build a team</h3>
+          <p>Find your gem</p>
+          <button>Tell me more</button>
+        </div>
+      </div>
     </section>
   );
 }
