@@ -1,5 +1,5 @@
-import heroPhotoOne from "./hero01.jpg";
-import heroPhotoTwo from "./hero02.jpg";
+import heroPhotoOne from "./hero01.png";
+import heroPhotoTwo from "./hero02.png";
 import partner1 from "./partner01.png";
 import partner2 from "./partner02.png";
 import partner3 from "./partner03.png";
