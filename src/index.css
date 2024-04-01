@@ -8,10 +8,12 @@
   --second-color: #7c44f1;
   --third-color: #a6e8d3;
 }
-html{
+html {
   box-sizing: border-box;
 }
-*,::after,::before{
+*,
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -19,18 +21,28 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,ul,ol,p,img{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+img {
   margin: 0;
   padding: 0;
 }
-ul,ol{
+ul,
+ol {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
-img{
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
 }
