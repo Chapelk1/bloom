@@ -1,6 +1,6 @@
 import { Section, Title, Text, Photo, Wrap, PartnerLogo } from "./Hero.styled";
 import { Container } from "component/Helpers/Helpers.styled";
-import photo from "assets/Hero";
+import photo from "assets/img/Hero";
 function Hero() {
   return (
     <Section bgi={[photo.heroPhotoOne, photo.heroPhotoTwo]}>

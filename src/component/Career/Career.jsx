@@ -18,9 +18,9 @@ import {
   Btn,
 } from "./Career.styled";
 import { Section, Container } from "component/Helpers/Helpers.styled";
-import icon from "assets/symbol-defs.svg";
-import sam from "assets/sam.jpg";
-import alex from "assets/alex.jpg";
+import icon from "assets/img/symbol-defs.svg";
+import sam from "assets/img/sam.jpg";
+import alex from "assets/img/alex.jpg";
 
 function Career() {
   return (

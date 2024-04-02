@@ -1,5 +1,5 @@
 import { Head,Container, Icon, Nav, List, Item, Link } from "./Header.styled";
-import icon from "assets/symbol-defs.svg";
+import icon from "assets/img/symbol-defs.svg";
 
 function Header() {
   return (

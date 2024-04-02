@@ -15,9 +15,9 @@ import { Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style-swiper.css";
-import vivienne from "assets/vivienne.jpg";
-import img from "assets/IMAGE-07.jpg";
-import logo from "assets/bumble.png";
+import vivienne from "assets/img/vivienne.jpg";
+import img from "assets/img/IMAGE-07.jpg";
+import logo from "assets/img/bumble.png";
 function Maintaining() {
   const pagination = {
     clickable: true,
