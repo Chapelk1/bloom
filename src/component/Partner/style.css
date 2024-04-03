@@ -1,0 +1,19 @@
+.partnerSwiper {
+  width: 346px;
+  height: 451px;
+  margin: 0;
+  margin-right: 33px;
+}
+
+.partnerSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: var(--primary-color);
+  box-shadow: -1px 2px 6px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+.partnerSwiper .swiper-slide-shadow {
+  opacity: 0 !important;
+}
