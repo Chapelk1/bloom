@@ -27,6 +27,7 @@ function Partner() {
           paddingLeft: "70px",
         }}
       >
+
         <Swiper
           loop={true}
           effect={"cards"}
@@ -43,6 +44,7 @@ function Partner() {
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
+        
         <Wrap>
           <Name>Dave Richardson</Name>
           <Position>Director of Recruitment</Position>
