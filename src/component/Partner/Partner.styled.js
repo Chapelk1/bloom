@@ -44,3 +44,12 @@ export const Arrow = styled.img`
   right: 68px;
   bottom: -161px;
 `;
+export const PhotoCard = styled.img`
+  border-radius: 2px;
+  width: 317px;
+  height: 385px;
+`;
+export const WrapSwiper = styled.div`
+  position: relative;
+  margin-right: 33px;
+`;

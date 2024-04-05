@@ -1,25 +1,25 @@
 import { Section, Container } from "component/Helpers/Helpers.styled";
 import {
   Wrap,
+  WrapSwiper,
   Name,
   Position,
   Descr,
   Text,
   Logo,
   Arrow,
+  PhotoCard,
 } from "./Partner.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-cards";
 import "./style.css";
 import { EffectCards } from "swiper/modules";
-import logo from "assets/img/monzo.png";
-import arrow from "assets/img/arrow-bottom-1.png";
+import monzoPhoto from 'assets/img/monzo'
 function Partner() {
   return (
-    <Section style={{ paddingTop: "166px", paddingBottom: "57px" }}>
+    <Section style={{ paddingTop: "185px", paddingBottom: "166px" }}>
       <Container
         style={{
           display: "flex",
@@ -27,24 +27,33 @@ function Partner() {
           paddingLeft: "70px",
         }}
       >
+        <WrapSwiper>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="partnerSwiper"
+            cardsEffect={{
+              perSlideOffset: 8,
+              rotate: false,
+            }}
+            initialSlide={4}
+          >
+            <SwiperSlide>
+              <PhotoCard src={monzoPhoto.monzo3} alt="Logo monzo" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PhotoCard src={monzoPhoto.monzo2} alt="Logo monzo" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PhotoCard src={monzoPhoto.monzo1} alt="Logo monzo" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PhotoCard src={monzoPhoto.monzoDave} alt="Partner monzo" />
+            </SwiperSlide>
+          </Swiper>
+        </WrapSwiper>
 
-        <Swiper
-          loop={true}
-          effect={"cards"}
-          grabCursor={true}
-          modules={[EffectCards]}
-          className="partnerSwiper"
-          cardsEffect={{
-            perSlideOffset: 8,
-            rotate: false,
-          }}
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-        </Swiper>
-        
         <Wrap>
           <Name>Dave Richardson</Name>
           <Position>Director of Recruitment</Position>
@@ -55,8 +64,8 @@ function Partner() {
             effortless, seamless and most importantly{" "}
             <span>fun, they just get it !</span>
           </Text>
-          <Logo src={logo} alt="" />
-          <Arrow src={arrow} alt="arrow" />
+          <Logo src={monzoPhoto.monzoLogo} alt="" />
+          <Arrow src={monzoPhoto.arrow} alt="arrow" />
         </Wrap>
       </Container>
     </Section>
