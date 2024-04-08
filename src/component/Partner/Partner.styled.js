@@ -51,5 +51,11 @@ export const PhotoCard = styled.img`
 `;
 export const WrapSwiper = styled.div`
   position: relative;
-  margin-right: 33px;
+`;
+
+export const Circle = styled.img`
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  z-index: 10;
 `;

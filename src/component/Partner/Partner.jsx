@@ -9,6 +9,7 @@ import {
   Logo,
   Arrow,
   PhotoCard,
+  Circle,
 } from "./Partner.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -16,60 +17,104 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cards";
 import "./style.css";
 import { EffectCards } from "swiper/modules";
-import monzoPhoto from 'assets/img/monzo'
-function Partner() {
-  return (
-    <Section style={{ paddingTop: "185px", paddingBottom: "166px" }}>
-      <Container
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          paddingLeft: "70px",
-        }}
-      >
-        <WrapSwiper>
-          <Swiper
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards]}
-            className="partnerSwiper"
-            cardsEffect={{
-              perSlideOffset: 8,
-              rotate: false,
-            }}
-            initialSlide={4}
-          >
-            <SwiperSlide>
-              <PhotoCard src={monzoPhoto.monzo3} alt="Logo monzo" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PhotoCard src={monzoPhoto.monzo2} alt="Logo monzo" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PhotoCard src={monzoPhoto.monzo1} alt="Logo monzo" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PhotoCard src={monzoPhoto.monzoDave} alt="Partner monzo" />
-            </SwiperSlide>
-          </Swiper>
-        </WrapSwiper>
 
-        <Wrap>
-          <Name>Dave Richardson</Name>
-          <Position>Director of Recruitment</Position>
-          <Descr>Collector of Vinyls & Exterior Decorator</Descr>
-          <Text>
-            I've partnered with bloom twice, at Deliveroo and Monzo, & both
-            times they have been really successful. Partnering with bloom is
-            effortless, seamless and most importantly{" "}
-            <span>fun, they just get it !</span>
-          </Text>
-          <Logo src={monzoPhoto.monzoLogo} alt="" />
-          <Arrow src={monzoPhoto.arrow} alt="arrow" />
-        </Wrap>
-      </Container>
-    </Section>
-  );
+function Partner({ position, photo, pad, data }) {
+  let paddingLeft = 'auto';
+  let initialSlide = 0;
+  if (pad) {
+    paddingLeft = pad;
+    initialSlide = 4;
+  }
+  
+    return (
+      <Section style={{ paddingTop: "160px", paddingBottom: "160px" }}>
+        <Container
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            paddingLeft: paddingLeft,
+          }}
+        >
+          {position === "left" && (
+            <WrapSwiper style={{ marginRight: "33px" }}>
+              <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="partnerSwiper"
+                cardsEffect={{
+                  perSlideOffset: 8,
+                  rotate: false,
+                }}
+                initialSlide={initialSlide}
+              >
+                <SwiperSlide>
+                  <PhotoCard src={photo.monzo3} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.monzo2} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.monzo1} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.monzoDave} alt="Partner monzo" />
+                </SwiperSlide>
+              </Swiper>
+              <Circle src={photo.circle} alt="circle" />
+              <Arrow
+                src={photo.arrow}
+                alt="arrow"
+                style={{ right: "-617px", bottom: "-161px" }}
+              />
+            </WrapSwiper>
+          )}
+
+          <Wrap>
+            <Name>{data.name}</Name>
+            <Position>{data.position}</Position>
+            <Descr>{data.description}</Descr>
+            <Text>{data.text}</Text>
+            <Logo src={photo.monzoLogo} alt="" />
+          </Wrap>
+
+          {position === "right" && (
+            <WrapSwiper style={{ marginRight: "16px" }}>
+              <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="partnerSwiper"
+                cardsEffect={{
+                  perSlideOffset: 8,
+                  rotate: false,
+                }}
+                initialSlide={initialSlide}
+              >
+                <SwiperSlide>
+                  <PhotoCard src={photo.googleJames} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.google3} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.google2} alt="Logo monzo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <PhotoCard src={photo.google1} alt="Partner monzo" />
+                </SwiperSlide>
+              </Swiper>
+              <Circle src={photo.circle} alt="circle" />
+              <Arrow
+                src={photo.arrow}
+                alt="arrow"
+                style={{ right: "107px", bottom: "-274px" }}
+              />
+            </WrapSwiper>
+          )}
+        </Container>
+      </Section>
+    );
 }
 
 export default Partner;

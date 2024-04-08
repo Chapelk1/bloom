@@ -7,6 +7,9 @@ import Partner from "./Partner/Partner";
 import Support from "./Support/Support";
 import Mentorship from "./Mentorship/Mentorship";
 import Footer from "./Footer/Footer"
+import monzoPhoto from "assets/img/monzo";
+import googlePhoto from "assets/img/google";
+import data from 'assets/data/partnerData.json'
 function App() {
   return (
     <>
@@ -15,11 +18,11 @@ function App() {
       <Career />
       <Maintaining />
       <Methods />
-      <Partner />
+      <Partner position={"left"} photo={monzoPhoto} pad={70} data={data[0]} />
       <Support />
-      <Partner />
+      <Partner position={"right"} photo={googlePhoto} data={data[1]} />
       <Mentorship />
-      <Footer/>
+      <Footer />
     </>
   );
 }

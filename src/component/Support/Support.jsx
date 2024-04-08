@@ -1,22 +1,48 @@
-
-
+import { Section, Container } from "component/Helpers/Helpers.styled";
+import { Text, Name, Position, Descr,Title, Btn, Icon } from "./Support.styled";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "./style.css";
+import cards from 'assets/data/supportCards.json'
+import sprite from 'assets/img/symbol-defs.svg'
 function Support() {
   return (
-    <section>
-      <p>
-        We discover and nurture ambitious people to help grow their careers,
-        matching them to incredible businesses and mentors, so that together
-        they can bloom.
-      </p>
-      <div className="swiper"></div>
+    <Section
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <Container>
+        <Text>
+          We discover and nurture ambitious people to help grow their careers,
+          matching them to incredible businesses and mentors, so that together
+          they can bloom.
+        </Text>
+      </Container>
 
-      <h2>Right people, right place, right time.</h2>
-          <button>Meet Sam & Alex
-              <svg>
-                <use></use>
-              </svg>
-      </button>
-    </section>
+      <Swiper
+        grabCursor={true}
+        loop={true}
+        spaceBetween={24}
+        className="supportSwiper"
+        slidesPerView={3}
+        centeredSlides={true}
+      >
+        {cards.map((card) => (
+          <SwiperSlide key={card.name}>
+            <Name>{card.name}</Name>
+            <Position>{card.position}</Position>
+            <Descr>{card.description}</Descr>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <Title>Right people, right place, right time.</Title>
+      <Btn>
+        Meet Sam & Alex
+        <Icon>
+          <use href={sprite + "#icon-arrow"}></use>
+        </Icon>
+      </Btn>
+    </Section>
   );
 }
 export default Support;

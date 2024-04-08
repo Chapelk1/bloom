@@ -18,8 +18,8 @@ function Methods() {
         slidesPerView={3}
         centeredSlides={true}
       >
-        {cards.map((card) => (
-          <SwiperSlide>
+        {cards.map((card, index) => (
+          <SwiperSlide key={card.title + index}>
             <SubTitle>{card.title}</SubTitle>
             <Descr>{card.text}</Descr>
             <Btn>
