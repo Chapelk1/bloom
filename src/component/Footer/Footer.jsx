@@ -1,40 +1,62 @@
+import { Container } from "component/Helpers/Helpers.styled";
+import {
+  Ftr,
+  WrapEvaluation,
+  IconL,
+  Num,
+  Star,
+  Text,
+  Nav,
+  Wrap,
+  Link,
+} from "./Footer.styled";
+import sprite from 'assets/img/symbol-defs.svg';
+
 function Footer() {
   return (
-    <footer>
-      <div>
-        <svg>
-          <use></use>
-        </svg>
-        <p></p>
-        <svg>
-          <use></use>
-        </svg>
-        <svg>
-          <use></use>
-        </svg>
-        <svg>
-          <use></use>
-        </svg>
-        <svg>
-          <use></use>
-        </svg>
-        <svg>
-          <use></use>
-        </svg>
-        <span></span>
-      </div>
-      <nav>
-        <div>
-          <a href="">Grow your career</a>
-          <a href="">Build a team</a>
-        </div>
-        <div>
-          <a href="">Meet the founders</a>
-          <a href="">Mentorship</a>
-          <a href="">Say hello</a>
-        </div>
-      </nav>
-    </footer>
+    <Ftr>
+      <Container style={{display: 'flex',
+    alignItems: 'flex-start'}}>
+        <WrapEvaluation>
+          <IconL>
+            <use href={sprite + "#icon-g"}></use>
+          </IconL>
+          <div>
+            <div>
+              <Num>5.0</Num>
+              <Star>
+                <use href={sprite + "#icon-star"}></use>
+              </Star>
+              <Star>
+                <use href={sprite + "#icon-star"}></use>
+              </Star>
+              <Star>
+                <use href={sprite + "#icon-star"}></use>
+              </Star>
+              <Star>
+                <use href={sprite + "#icon-star"}></use>
+              </Star>
+              <Star>
+                <use href={sprite + "#icon-star"}></use>
+              </Star>
+            </div>
+            <Text>Based on 106 reviews</Text>
+          </div>
+        </WrapEvaluation>
+
+        <Nav>
+          <Wrap>
+            <Link href="">Grow your career</Link>
+            <Link href="">Build a team</Link>
+          </Wrap>
+          <Wrap>
+            <Link href="">Meet the founders</Link>
+            <Link href="">Mentorship</Link>
+            <Link href="">Say hello</Link>
+          </Wrap>
+        </Nav>
+      </Container>
+    </Ftr>
   );
 }
 

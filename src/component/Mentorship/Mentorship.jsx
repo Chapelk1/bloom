@@ -13,7 +13,7 @@ import photo from 'assets/img/IMAGE-08.png';
 import sprite from "assets/img/symbol-defs.svg";
 function Mentorship() {
   return (
-    <Section>
+    <Section style={{paddingBottom: '160px'}}>
       <Container>
         <Text>
           It’s more than a job, <span>for you, and for us.</span>
