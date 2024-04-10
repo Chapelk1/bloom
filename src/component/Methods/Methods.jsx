@@ -9,7 +9,7 @@ import cards from "assets/data/cards.json";
 function Methods() {
   return (
     <Section style={{ paddingTop: "160px" }}>
-      <Title>the method to our madness</Title>
+      <Title id="hello">the method to our madness</Title>
       <Swiper
         grabCursor={true}
         loop={true}

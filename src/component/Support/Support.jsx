@@ -25,6 +25,21 @@ function Support() {
         className="supportSwiper"
         slidesPerView={3}
         centeredSlides={true}
+        breakpoints={{
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+          1700: {
+            slidesPerView: 5,
+            spaceBetween: 24,
+          },
+        }}
       >
         {cards.map((card) => (
           <SwiperSlide key={card.name}>
@@ -35,7 +50,7 @@ function Support() {
         ))}
       </Swiper>
 
-      <Title>Right people, right place, right time.</Title>
+      <Title id="founders">Right people, right place, right time.</Title>
       <Btn>
         Meet Sam & Alex
         <Icon>

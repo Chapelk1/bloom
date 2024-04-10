@@ -11,19 +11,19 @@ function Header() {
         <Nav>
           <List>
             <Item>
-              <Link href="">Grow your career</Link>
+              <Link href="#career">Grow your career</Link>
             </Item>
             <Item>
-              <Link href="">Build a team</Link>
+              <Link href="#team">Build a team</Link>
             </Item>
             <Item>
-              <Link href="">Meet the founders</Link>
+              <Link href="#founders">Meet the founders</Link>
             </Item>
             <Item>
-              <Link href="">Mentorship</Link>
+              <Link href="#mentorship">Mentorship</Link>
             </Item>
             <Item>
-              <Link href="">Say hello</Link>
+              <Link href="#hello">Say hello</Link>
             </Item>
           </List>
         </Nav>

@@ -24,7 +24,7 @@ import alex from "assets/img/alex.jpg";
 
 function Career() {
   return (
-    <Section>
+    <Section id="career">
       <TopBlock>
         <Container>
           <Title>Hey, we're bloom.</Title>
@@ -42,7 +42,7 @@ function Career() {
                   Product Management &<span>Executive Search</span>{" "}
                 </Position>
                 <BtnPerson>
-                  LinkedIn
+                  <span>LinkedIn</span>
                   <Icon>
                     <use href={icon + "#icon-arrow"}></use>
                   </Icon>
@@ -50,7 +50,7 @@ function Career() {
               </WrapName>
             </Person>
 
-            <Person>
+            <Person id="team">
               <WrapPhoto>
                 <Photo src={alex} alt="" />
               </WrapPhoto>
@@ -60,7 +60,7 @@ function Career() {
                   Software Engineering &<span>Executive Search</span>{" "}
                 </Position>
                 <BtnPerson>
-                  LinkedIn
+                  <span>LinkedIn</span>
                   <Icon>
                     <use href={icon + "#icon-arrow"}></use>
                   </Icon>

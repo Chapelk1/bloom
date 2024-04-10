@@ -60,21 +60,60 @@ export const Position = styled.p`
     display: block;
   }
 `;
-export const BtnPerson = styled.button`
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.37;
-  color: var(--primary-color);
+export const BtnPerson = styled.a`
+  position: relative;
+  display: inline-block;
   padding: 2px 28px 2px 22px;
   border: 2px solid var(--primary-color);
   border-radius: 999px;
   background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 200ms;
+
+  span {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.37;
+    color: var(--primary-color);
+    z-index: 3;
+    transition-duration: 200ms;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    inset: -5px;
+    background: var(--primary-color);
+    z-index: 2;
+    transition-duration: 300ms;
+    transform: translateX(-101%);
+  }
+
+  :hover::before {
+    transform: translateX(0%);
+  }
+  :hover span {
+    color: var(--second-color);
+  }
+  :hover svg {
+    fill: var(--second-color);
+  }
+  :hover {
+    border: 2px solid transparent;
+  }
 `;
 export const Icon = styled.svg`
+  position: relative;
   width: 15px;
   height: 14px;
   margin-left: 16px;
+  fill: var(--primary-color);
+  z-index: 3;
+  transition-duration: 600ms;
 `;
 
 export const BottomBlock = styled.div`
