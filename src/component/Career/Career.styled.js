@@ -60,7 +60,7 @@ export const Position = styled.p`
     display: block;
   }
 `;
-export const BtnPerson = styled.a`
+export const BtnPerson = styled.button`
   position: relative;
   display: inline-block;
   padding: 2px 28px 2px 22px;
@@ -69,41 +69,19 @@ export const BtnPerson = styled.a`
   background: transparent;
   overflow: hidden;
   cursor: pointer;
-  transition-duration: 200ms;
-
-  span {
-    position: relative;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.37;
-    color: var(--primary-color);
-    z-index: 3;
-    transition-duration: 200ms;
-  }
-
-  ::before {
-    content: "";
-    position: absolute;
-    border-radius: 999px;
-    inset: -5px;
-    background: var(--primary-color);
-    z-index: 2;
-    transition-duration: 300ms;
-    transform: translateX(-101%);
-  }
-
-  :hover::before {
-    transform: translateX(0%);
-  }
-  :hover span {
-    color: var(--second-color);
-  }
+  transition: all 250ms linear;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.37;
+  color: var(--primary-color);
+  fill: var(--primary-color);
   :hover svg {
     fill: var(--second-color);
   }
   :hover {
-    border: 2px solid transparent;
+    background: var(--primary-color);
+    color: var(--second-color);
   }
 `;
 export const Icon = styled.svg`
@@ -111,9 +89,8 @@ export const Icon = styled.svg`
   width: 15px;
   height: 14px;
   margin-left: 16px;
-  fill: var(--primary-color);
-  z-index: 3;
-  transition-duration: 600ms;
+  fill: inherit;
+  transition-duration: 250ms;
 `;
 
 export const BottomBlock = styled.div`
@@ -165,4 +142,13 @@ export const Btn = styled.button`
   justify-content: center;
   align-items: center;
   background: transparent;
+  transition: all 250ms linear;
+  cursor: pointer;
+  :hover svg {
+    fill: var(--accent-color);
+  }
+  :hover {
+    background: var(--text-color-second);
+    color: var(--accent-color);
+  }
 `;

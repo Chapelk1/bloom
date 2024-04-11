@@ -5,9 +5,12 @@ function Header() {
   return (
     <Head>
       <Container>
-        <Icon>
-          <use href={icon + "#icon-logo"}></use>
-        </Icon>
+        <a href="./">
+          <Icon>
+            <use href={icon + "#icon-logo"}></use>
+          </Icon>
+        </a>
+
         <Nav>
           <List>
             <Item>

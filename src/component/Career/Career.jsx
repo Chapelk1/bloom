@@ -24,7 +24,7 @@ import alex from "assets/img/alex.jpg";
 
 function Career() {
   return (
-    <Section id="career">
+    <Section id="career" style={{ zIndex: "-1" }}>
       <TopBlock>
         <Container>
           <Title>Hey, we're bloom.</Title>
@@ -42,7 +42,7 @@ function Career() {
                   Product Management &<span>Executive Search</span>{" "}
                 </Position>
                 <BtnPerson>
-                  <span>LinkedIn</span>
+                  LinkedIn
                   <Icon>
                     <use href={icon + "#icon-arrow"}></use>
                   </Icon>
@@ -60,7 +60,7 @@ function Career() {
                   Software Engineering &<span>Executive Search</span>{" "}
                 </Position>
                 <BtnPerson>
-                  <span>LinkedIn</span>
+                  LinkedIn
                   <Icon>
                     <use href={icon + "#icon-arrow"}></use>
                   </Icon>

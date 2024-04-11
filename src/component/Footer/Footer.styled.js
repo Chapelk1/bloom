@@ -50,10 +50,29 @@ export const Wrap = styled.div`
   }
 `;
 export const Link = styled.a`
+  position: relative;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   color: var(--primary-color);
   margin-bottom: 13px;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -14px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--second-color);
+    transform: scale(0);
+    transition: all 250ms linear;
+  }
+
+  :hover::before {
+    background: var(--primary-color);
+    transform: scale(1.2);
+  }
 `;

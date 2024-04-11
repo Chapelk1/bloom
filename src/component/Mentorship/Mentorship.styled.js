@@ -59,10 +59,21 @@ export const Btn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 250ms linear;
+
+  :hover {
+    background: var(--text-color-second);
+    color: var(--accent-color);
+  }
+  :hover svg {
+    fill: var(--accent-color);
+  }
 `;
 export const Photo = styled.img``;
 export const Icon = styled.svg`
   width: 15px;
   height: 14px;
   margin-left: 20px;
-`
+  transition: all 250ms linear;
+`;

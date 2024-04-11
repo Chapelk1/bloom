@@ -47,7 +47,7 @@ export const Link = styled.a`
     background: var(--text-color-second);
     height: 2px;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition-duration: 250ms;
   }
 `;

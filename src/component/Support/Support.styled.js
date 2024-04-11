@@ -65,9 +65,20 @@ export const Btn = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 250ms linear;
+
+  :hover {
+    background: var(--second-color);
+    color: var(--primary-color);
+  }
+  :hover svg{
+    fill: var(--primary-color);
+  }
 `;
 export const Icon = styled.svg`
-width: 15px;
-height: 14px;
-margin-left: 7px;
+  width: 15px;
+  height: 14px;
+  margin-left: 7px;
+  fill: var(--second-color);
+  transition: all 250ms linear;
 `;

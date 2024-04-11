@@ -15,8 +15,7 @@ import sprite from 'assets/img/symbol-defs.svg';
 function Footer() {
   return (
     <Ftr>
-      <Container style={{display: 'flex',
-    alignItems: 'flex-start'}}>
+      <Container style={{ display: "flex", alignItems: "flex-start" }}>
         <WrapEvaluation>
           <IconL>
             <use href={sprite + "#icon-g"}></use>
@@ -46,13 +45,13 @@ function Footer() {
 
         <Nav>
           <Wrap>
-            <Link href="">Grow your career</Link>
-            <Link href="">Build a team</Link>
+            <Link href="#career">Grow your career</Link>
+            <Link href="#team">Build a team</Link>
           </Wrap>
           <Wrap>
-            <Link href="">Meet the founders</Link>
-            <Link href="">Mentorship</Link>
-            <Link href="">Say hello</Link>
+            <Link href="#founders">Meet the founders</Link>
+            <Link href="#mentorship">Mentorship</Link>
+            <Link href="#hello">Say hello</Link>
           </Wrap>
         </Nav>
       </Container>
