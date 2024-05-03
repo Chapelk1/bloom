@@ -13,14 +13,21 @@ export const Text = styled.p`
   }
 `;
 export const Block = styled.div`
-  display: flex;
   background: var(--accent-color);
   border-radius: 32px;
-  padding-left: 48px;
-  padding-right: 32px;
   padding: 52px 32px 52px 48px;
-  justify-content: space-between;
-  align-items: flex-end;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 `;
 export const Wrap = styled.div``;
 export const Title = styled.h2`
@@ -36,13 +43,22 @@ export const Title = styled.h2`
 export const Descr = styled.p`
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 20px;
   line-height: 1.3;
   color: var(--text-color-second);
   margin-bottom: 60px;
 
-  span{
+  span {
     display: block;
+  }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
   }
 `;
 export const Btn = styled.button`

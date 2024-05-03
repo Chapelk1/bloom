@@ -8,14 +8,23 @@ export const WrapEvaluation = styled.div`
   border-radius: 16px;
   padding: 12px 42px 12px 20px;
   background: #280f5b;
-  display: flex;
-  align-items: center;
-  margin-right: 165px;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 165px;
+    display: flex;
+    align-items: center;
+  }
 `;
 export const IconL = styled.svg`
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
 `;
 export const Num = styled.span`
   font-family: var(--font-family);
@@ -40,13 +49,29 @@ export const Text = styled.p`
 `;
 
 export const Nav = styled.nav`
-display: flex;`;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+`;
 export const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  &:not(:last-child) {
-    margin-right: 175px;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    &:not(:last-child) {
+      margin-right: 175px;
+    }
   }
 `;
 export const Link = styled.a`

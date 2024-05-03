@@ -1,5 +1,23 @@
 import styled from "@emotion/styled";
 
+export const Container = styled.div`
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1246px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: ${(prop) => prop.paddingLeft};
+  }
+`;
 export const Wrap = styled.div`
   position: relative;
 `;
@@ -40,9 +58,24 @@ export const Text = styled.p`
 `;
 export const Logo = styled.img``;
 export const Arrow = styled.img`
-  position: absolute;
-  right: 68px;
-  bottom: -161px;
+  display: none;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: unset;
+    position: absolute;
+    right: 68px;
+    bottom: -161px;
+    .partnerSwiper {
+      width: 346px;
+      height: 451px;
+      margin: 0;
+    }
+  }
 `;
 export const PhotoCard = styled.img`
   border-radius: 2px;

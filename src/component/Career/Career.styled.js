@@ -1,34 +1,120 @@
 import styled from "@emotion/styled";
+export const Section = styled.section`
+  z-index: -1;
+`;
+export const ContainerTop = styled.div`
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1246px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+`;
+export const Container = styled.div`
+  width: 100%;
 
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1246px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+`;
 export const TopBlock = styled.div`
   background: var(--second-color);
-  padding: 35px 0 154px 0;
+  padding: 35px 0 54px 0;
+  margin-bottom: 30px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding: 35px 0 154px 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const Title = styled.h2`
   font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 50px;
+  font-weight: 500;
+  font-size: 28px;
   line-height: 1.3;
   color: var(--text-color-second);
   margin-bottom: 24px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
+  }
 `;
 export const Text = styled.p`
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 28px;
   line-height: 1.3;
   color: var(--text-color-second);
-  margin-bottom: 143px;
+  margin-bottom: 60px;
   & span {
     display: block;
   }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+
+    margin-bottom: 143px;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
+  }
 `;
 export const WrapPerson = styled.div`
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 export const Person = styled.div`
-  display: flex;
+  :not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
 `;
 export const WrapPhoto = styled.div`
   border-radius: 4px;
@@ -36,11 +122,28 @@ export const WrapPhoto = styled.div`
   height: 258px;
   background: var(--primary-color);
   padding: 8px 8px 32px 8px;
-  margin-right: 15px;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const WrapName = styled.div``;
 export const Photo = styled.img`
   border-radius: 4px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const Name = styled.h3`
   font-family: var(--font-family);
@@ -48,16 +151,34 @@ export const Name = styled.h3`
   font-size: 50px;
   line-height: 1.3;
   color: var(--accent-color);
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const Position = styled.p`
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.3;
   color: var(--accent-color);
-  margin-bottom: 54px;
+  margin-bottom: 24px;
   & span {
     display: block;
+  }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 54px;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 34px;
   }
 `;
 export const BtnPerson = styled.button`
@@ -83,6 +204,14 @@ export const BtnPerson = styled.button`
     background: var(--primary-color);
     color: var(--second-color);
   }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const Icon = styled.svg`
   position: relative;
@@ -91,21 +220,65 @@ export const Icon = styled.svg`
   margin-left: 16px;
   fill: inherit;
   transition-duration: 250ms;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 
 export const BottomBlock = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 export const Card = styled.div`
-  width: calc((100% - 24px) / 2);
   background: var(--accent-color);
-  border-radius: 0 0 32px 32px;
-  padding: 26px 0 40px 0;
-  text-align: center;
+  width: 80%;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  :nth-child(1) {
+    border-radius: 0 32px 32px 0;
+    margin-bottom: 30px;
+  }
+  :nth-child(2) {
+    border-radius: 32px 0 0 32px;
+    align-self: end;
+  }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 24px) / 2);
+    padding: 26px 0 40px 0;
+    justify-content: normal;
+    :nth-child(1) {
+      border-radius: 0 0 32px 32px;
+      margin-bottom: 0;
+    }
+    :nth-child(2) {
+      border-radius: 0 0 32px 32px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const SubTitle = styled.h3`
   font-family: var(--third-family);
@@ -117,15 +290,32 @@ export const SubTitle = styled.h3`
 
   color: var(--text-color-second);
   margin-bottom: 16px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const Descr = styled.p`
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 26px;
   line-height: 1.3;
 
   color: var(--text-color-second);
   margin-bottom: 33px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
+  }
 `;
 export const Btn = styled.button`
   font-family: var(--font-family);
@@ -150,5 +340,13 @@ export const Btn = styled.button`
   :hover {
     background: var(--text-color-second);
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
   }
 `;

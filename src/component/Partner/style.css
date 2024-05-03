@@ -1,8 +1,8 @@
-.partnerSwiper {
+/* .partnerSwiper {
   width: 346px;
   height: 451px;
   margin: 0;
-}
+} */
 
 .partnerSwiper .swiper-slide {
   display: flex;
@@ -19,3 +19,16 @@
   opacity: 0 !important;
 }
 
+@media screen and (min-width: 320px) {  
+}
+@media screen and (min-width: 768px) { 
+}
+@media screen and (min-width: 1024px) { 
+}
+@media screen and (min-width: 1440px) { 
+  .partnerSwiper {
+  width: 346px;
+  height: 451px;
+  margin: 0;
+}
+}

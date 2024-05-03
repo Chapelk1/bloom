@@ -9,11 +9,21 @@ import Mentorship from "./Mentorship/Mentorship";
 import Footer from "./Footer/Footer"
 import monzoPhoto from "assets/img/monzo";
 import googlePhoto from "assets/img/google";
-import data from 'assets/data/partnerData.json'
+import data from 'assets/data/partnerData.json';
+import { useState } from "react";
+
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const render = width >= 768 ? true : false;
+  const viewWidth = () => {
+    setWidth(window.innerWidth);
+  }
+  window.addEventListener("resize", viewWidth);
+  
+
   return (
     <>
-      <Header />
+      <Header render={render} />
       <Hero />
       <Career />
       <Maintaining />

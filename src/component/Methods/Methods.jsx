@@ -17,6 +17,16 @@ function Methods() {
         className="methodSwiper"
         slidesPerView={3}
         centeredSlides={true}
+        breakpoints={{
+          320: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          768: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+        }}
       >
         {cards.map((card, index) => (
           <SwiperSlide key={card.title + index}>

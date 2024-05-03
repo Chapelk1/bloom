@@ -5,7 +5,6 @@
 }
 
 .methodSwiper .swiper-slide {
-  /* position: relative; */
   background-color: var(--second-color);
   transition: all 500ms linear;
   padding-top: 32px;

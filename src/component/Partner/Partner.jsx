@@ -1,5 +1,6 @@
-import { Section, Container } from "component/Helpers/Helpers.styled";
+import { Section } from "component/Helpers/Helpers.styled";
 import {
+  Container,
   Wrap,
   WrapSwiper,
   Name,
@@ -28,13 +29,7 @@ function Partner({ position, photo, pad, data }) {
   
     return (
       <Section style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-        <Container
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            paddingLeft: paddingLeft,
-          }}
-        >
+        <Container paddingLeft={ paddingLeft }>
           {position === "left" && (
             <WrapSwiper style={{ marginRight: "33px" }}>
               <Swiper

@@ -1,4 +1,4 @@
-import { Section, Title, Text, Photo, Wrap, PartnerLogo } from "./Hero.styled";
+import { Section, Title, Text, Wrap, PartnerLogo } from "./Hero.styled";
 import { Container } from "component/Helpers/Helpers.styled";
 import photo from "assets/img/Hero";
 function Hero() {
@@ -12,8 +12,7 @@ function Hero() {
           Product & Engineering Recruitment
           <span>va va bloom, with a human touch and a dash of</span>
         </Text>
-        {/* <Photo src={photo.heroPhotoOne} alt="" />
-      <Photo src={photo.heroPhotoTwo} alt="" /> */}
+        
       </Container>
       <Wrap>
         <PartnerLogo src={photo.partner1} alt="" />

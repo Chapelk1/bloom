@@ -1,4 +1,7 @@
 import {
+  Section,
+  Container,
+  ContainerTop,
   TopBlock,
   Title,
   Text,
@@ -17,16 +20,15 @@ import {
   Descr,
   Btn,
 } from "./Career.styled";
-import { Section, Container } from "component/Helpers/Helpers.styled";
 import icon from "assets/img/symbol-defs.svg";
 import sam from "assets/img/sam.jpg";
 import alex from "assets/img/alex.jpg";
 
 function Career() {
   return (
-    <Section id="career" style={{ zIndex: "-1" }}>
+    <Section id="career">
       <TopBlock>
-        <Container>
+        <ContainerTop>
           <Title>Hey, we're bloom.</Title>
           <Text>
             Product Management and <span>Software Engineering</span>
@@ -68,7 +70,7 @@ function Career() {
               </WrapName>
             </Person>
           </WrapPerson>
-        </Container>
+        </ContainerTop>
       </TopBlock>
 
       <Container>
