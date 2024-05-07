@@ -1,4 +1,5 @@
 import {
+  Section,
   Title,
   WrapText,
   SubTitle,
@@ -9,7 +10,7 @@ import {
   WrapPhoto,
   Photo,
 } from "./Maintaining.styled";
-import { Section, Container } from "component/Helpers/Helpers.styled";
+import { Container } from "component/Helpers/Helpers.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
@@ -33,7 +34,7 @@ function Maintaining() {
   };
 
   return (
-    <Section style={{ padding: "161px 0 0 0" }}>
+    <Section>
       <Container>
         <Title>
           bloom support and enable early stage startups, scaleups and leading

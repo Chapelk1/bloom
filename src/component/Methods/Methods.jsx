@@ -26,6 +26,14 @@ function Methods() {
             spaceBetween: 20,
             slidesPerView: 2,
           },
+          1024: {
+            spaceBetween: 24,
+            slidesPerView: 3,
+          },
+          1440: {
+            spaceBetween: 24,
+            slidesPerView: 4,
+          },
         }}
       >
         {cards.map((card, index) => (

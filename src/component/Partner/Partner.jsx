@@ -1,5 +1,4 @@
-import { Section } from "component/Helpers/Helpers.styled";
-import {
+import {Section,
   Container,
   Wrap,
   WrapSwiper,
@@ -19,94 +18,51 @@ import "swiper/css/effect-cards";
 import "./style.css";
 import { EffectCards } from "swiper/modules";
 
-function Partner({ position, photo, pad, data }) {
-  let paddingLeft = 'auto';
+function Partner({ position, photo, data }) {
   let initialSlide = 0;
-  if (pad) {
-    paddingLeft = pad;
+  if (position === 'left') {
     initialSlide = 4;
   }
   
     return (
-      <Section style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-        <Container paddingLeft={ paddingLeft }>
-          {position === "left" && (
-            <WrapSwiper style={{ marginRight: "33px" }}>
-              <Swiper
-                effect={"cards"}
-                grabCursor={true}
-                modules={[EffectCards]}
-                className="partnerSwiper"
-                cardsEffect={{
-                  perSlideOffset: 8,
-                  rotate: false,
-                }}
-                initialSlide={initialSlide}
-              >
-                <SwiperSlide>
-                  <PhotoCard src={photo.monzo3} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.monzo2} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.monzo1} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.monzoDave} alt="Partner monzo" />
-                </SwiperSlide>
-              </Swiper>
-              <Circle src={photo.circle} alt="circle" />
-              <Arrow
-                src={photo.arrow}
-                alt="arrow"
-                style={{ right: "-617px", bottom: "-161px" }}
-              />
-            </WrapSwiper>
-          )}
+      <Section>
+        <Container position={position}>
+          <WrapSwiper position={position}>
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="partnerSwiper"
+              cardsEffect={{
+                perSlideOffset: 8,
+                rotate: false,
+              }}
+              initialSlide={initialSlide}
+            >
+              <SwiperSlide>
+                <PhotoCard src={photo[5]} alt="Logo" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PhotoCard src={photo[4]} alt="Logo" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PhotoCard src={photo[3]} alt="Logo" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PhotoCard src={photo[2]} alt="Partner" />
+              </SwiperSlide>
+            </Swiper>
+            <Circle src={photo[6]} alt="circle" />
+            <Arrow src={photo[1]} alt="arrow" position={position} />
+          </WrapSwiper>
 
           <Wrap>
             <Name>{data.name}</Name>
             <Position>{data.position}</Position>
             <Descr>{data.description}</Descr>
             <Text>{data.text}</Text>
-            <Logo src={photo.monzoLogo} alt="" />
+            <Logo src={photo[0]} alt="" />
           </Wrap>
-
-          {position === "right" && (
-            <WrapSwiper style={{ marginRight: "16px" }}>
-              <Swiper
-                effect={"cards"}
-                grabCursor={true}
-                modules={[EffectCards]}
-                className="partnerSwiper"
-                cardsEffect={{
-                  perSlideOffset: 8,
-                  rotate: false,
-                }}
-                initialSlide={initialSlide}
-              >
-                <SwiperSlide>
-                  <PhotoCard src={photo.googleJames} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.google3} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.google2} alt="Logo monzo" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <PhotoCard src={photo.google1} alt="Partner monzo" />
-                </SwiperSlide>
-              </Swiper>
-              <Circle src={photo.circle} alt="circle" />
-              <Arrow
-                src={photo.arrow}
-                alt="arrow"
-                style={{ right: "107px", bottom: "-274px" }}
-              />
-            </WrapSwiper>
-          )}
         </Container>
       </Section>
     );

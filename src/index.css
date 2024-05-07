@@ -8,13 +8,11 @@
   --second-color: #7c44f1;
   --third-color: #a6e8d3;
 }
-html {
-  box-sizing: border-box;
-}
+
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {

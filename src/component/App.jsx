@@ -28,7 +28,7 @@ function App() {
       <Career />
       <Maintaining />
       <Methods />
-      <Partner position={"left"} photo={monzoPhoto} pad={70} data={data[0]} />
+      <Partner position={"left"} photo={monzoPhoto} data={data[0]} />
       <Support />
       <Partner position={"right"} photo={googlePhoto} data={data[1]} />
       <Mentorship />

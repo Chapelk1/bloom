@@ -1,21 +1,42 @@
 import styled from "@emotion/styled";
-
+export const Section = styled.div`
+  padding: 80px 0;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding: 160px 0;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+`;
 export const Container = styled.div`
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
+    overflow: unset;
   }
   @media screen and (min-width: 1024px) {
   }
   @media screen and (min-width: 1440px) {
+    flex-direction: row;
     width: 1246px;
     display: flex;
     justify-content: space-between;
-    padding-left: ${(prop) => prop.paddingLeft};
+    padding-left: ${(prop) => {
+      // if (prop.position === 'left') {
+      //   return 'auto';
+      // } else {
+      //   return 'auto';
+      // }
+    }};
   }
 `;
 export const Wrap = styled.div`
@@ -68,27 +89,83 @@ export const Arrow = styled.img`
   @media screen and (min-width: 1440px) {
     display: unset;
     position: absolute;
-    right: 68px;
-    bottom: -161px;
-    .partnerSwiper {
-      width: 346px;
-      height: 451px;
-      margin: 0;
-    }
+    right: ${({ position }) => {
+      if (position === "left") {
+        return "-617px";
+      } else {
+        return "107px";
+      }
+    }};
+    bottom: ${({ position }) => {
+      if (position === "left") {
+        return "-161px";
+      } else {
+        return "-274px";
+      }
+    }};
   }
 `;
 export const PhotoCard = styled.img`
   border-radius: 2px;
-  width: 317px;
-  height: 385px;
+
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 317px;
+    height: 385px;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 export const WrapSwiper = styled.div`
   position: relative;
+  margin-bottom: 40px;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    order: ${(prop) => {
+      if (prop.position === "left") {
+        return "0";
+      } else {
+        return "2";
+      }
+    }};
+    margin: ${(prop) => {
+      if (prop.position === "left") {
+        return "0 33px 0 0";
+      } else {
+        return "0 16px 0 0";
+      }
+    }};
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
 `;
 
 export const Circle = styled.img`
   position: absolute;
-  right: -40px;
-  bottom: -40px;
+  right: -20px;
+  bottom: -20px;
+  width: 80px;
+  height: 80px;
   z-index: 10;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    right: -40px;
+    bottom: -40px;
+    width: 100px;
+    height: 100px;
+  }
 `;
+
+

@@ -3,13 +3,23 @@ import styled from "@emotion/styled";
 export const Text = styled.p`
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.3;
   color: var(--text-color-second);
-  margin-bottom: 174px;
+  margin-bottom: 40px;
 
-  span {
-    display: block;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 174px;
+    font-size: 50px;
+    span {
+      display: block;
+    }
   }
 `;
 export const Block = styled.div`
@@ -77,13 +87,22 @@ export const Btn = styled.button`
   align-items: center;
   cursor: pointer;
   transition: all 250ms linear;
-
+  margin-bottom: 30px;
   :hover {
     background: var(--text-color-second);
     color: var(--accent-color);
   }
   :hover svg {
     fill: var(--accent-color);
+  }
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
   }
 `;
 export const Photo = styled.img``;

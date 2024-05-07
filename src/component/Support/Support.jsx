@@ -21,10 +21,10 @@ function Support() {
       <Swiper
         grabCursor={true}
         loop={true}
-        spaceBetween={24}
+        // spaceBetween={24}
         className="supportSwiper"
-        slidesPerView={3}
-        centeredSlides={true}
+        // slidesPerView={3}
+        // centeredSlides={true}
         // breakpoints={{
         //   375: {
         //     slidesPerView: 2,
@@ -47,7 +47,15 @@ function Support() {
           },
           768: {
             spaceBetween: 20,
-            slidesPerView: 2,
+            slidesPerView: 3,
+          },
+          1024: {
+            spaceBetween: 24,
+            slidesPerView: 3,
+          },
+          1440: {
+            spaceBetween: 24,
+            slidesPerView: 4,
           },
         }}
       >

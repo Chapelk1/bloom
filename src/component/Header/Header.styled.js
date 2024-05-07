@@ -70,6 +70,7 @@ export const MobileMenu = styled.div`
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
   display: flex;
   justify-content: center;
   width: 60%;

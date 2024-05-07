@@ -4,14 +4,32 @@ export const Ftr = styled.footer`
   background: var(--second-color);
   padding: 50px 0;
 `;
+export const Container = styled.div`
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1246px;
+  }
+`;
 export const WrapEvaluation = styled.div`
   border-radius: 16px;
   padding: 12px 42px 12px 20px;
   background: #280f5b;
-
+  margin-bottom: 50px;
   @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1024px) {
   }
