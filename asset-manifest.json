@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bloom/static/css/main.d81a1d1e.css",
-    "main.js": "/bloom/static/js/main.6c35fba8.js",
+    "main.css": "/bloom/static/css/main.9d8d545d.css",
+    "main.js": "/bloom/static/js/main.87fb3c05.js",
     "static/media/james.jpg": "/bloom/static/media/james.ac20e5f453fc1d6e22bb.jpg",
     "static/media/IMAGE-07.jpg": "/bloom/static/media/IMAGE-07.6fd0c8fe1fdb0b2e7f78.jpg",
     "static/media/IMAGE-04.jpg": "/bloom/static/media/IMAGE-04.d898d96aef4b4ce66ef5.jpg",
@@ -17,13 +17,13 @@
     "static/media/sam.jpg": "/bloom/static/media/sam.c5acb69cb55bece83dc1.jpg",
     "static/media/IMAGE-02.jpg": "/bloom/static/media/IMAGE-02.13c907cfbe09a5981b45.jpg",
     "static/media/IMAGE-01.jpg": "/bloom/static/media/IMAGE-01.b92dfc187f8608e2f989.jpg",
-    "static/media/symbol-defs.svg": "/bloom/static/media/symbol-defs.e26e4bf7ade3139daa76f9128e7ddcdf.svg",
+    "static/media/symbol-defs.svg": "/bloom/static/media/symbol-defs.decd768df892ad53a4a25b1b0c959dee.svg",
     "index.html": "/bloom/index.html",
-    "main.d81a1d1e.css.map": "/bloom/static/css/main.d81a1d1e.css.map",
-    "main.6c35fba8.js.map": "/bloom/static/js/main.6c35fba8.js.map"
+    "main.9d8d545d.css.map": "/bloom/static/css/main.9d8d545d.css.map",
+    "main.87fb3c05.js.map": "/bloom/static/js/main.87fb3c05.js.map"
   },
   "entrypoints": [
-    "static/css/main.d81a1d1e.css",
-    "static/js/main.6c35fba8.js"
+    "static/css/main.9d8d545d.css",
+    "static/js/main.87fb3c05.js"
   ]
 }
