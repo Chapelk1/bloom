@@ -1,5 +1,15 @@
 import styled from "@emotion/styled";
-
+export const Container = styled.div`
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1440px) {
+    width: 1246px;
+  }
+`;
 export const Text = styled.p`
   font-family: var(--font-family);
   font-weight: 400;
@@ -7,13 +17,6 @@ export const Text = styled.p`
   line-height: 1.3;
   color: var(--text-color-second);
   margin-bottom: 40px;
-
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     margin-bottom: 174px;
     font-size: 50px;
@@ -22,21 +25,23 @@ export const Text = styled.p`
     }
   }
 `;
+
 export const Block = styled.div`
   background: var(--accent-color);
   border-radius: 32px;
   padding: 52px 32px 52px 48px;
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 600px) {
+    width: 570px;
   }
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
   }
   @media screen and (min-width: 1440px) {
-    display: flex;
-
-    justify-content: space-between;
     align-items: flex-end;
+    justify-content: space-between;
   }
 `;
 export const Wrap = styled.div``;
@@ -61,15 +66,10 @@ export const Descr = styled.p`
   span {
     display: block;
   }
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     font-size: 50px;
   }
+
 `;
 export const Btn = styled.button`
   font-family: var(--font-family);
@@ -95,14 +95,8 @@ export const Btn = styled.button`
   :hover svg {
     fill: var(--accent-color);
   }
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const Photo = styled.img``;

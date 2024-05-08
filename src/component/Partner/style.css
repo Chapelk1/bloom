@@ -1,5 +1,5 @@
 .partnerSwiper {
-  width: 280px;
+  width: 100%;
 }
 
 .partnerSwiper .swiper-slide {
@@ -17,6 +17,7 @@
 @media screen and (min-width: 320px) {  
 }
 @media screen and (min-width: 768px) { 
+
 }
 @media screen and (min-width: 1024px) { 
 }

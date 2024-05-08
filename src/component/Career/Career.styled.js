@@ -6,11 +6,12 @@ export const ContainerTop = styled.div`
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   @media screen and (min-width: 1024px) {
+    align-items: normal;
   }
   @media screen and (min-width: 1440px) {
     width: 1246px;
@@ -21,12 +22,6 @@ export const ContainerTop = styled.div`
 export const Container = styled.div`
   width: 100%;
 
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     width: 1246px;
     padding: 0 15px;
@@ -37,15 +32,16 @@ export const TopBlock = styled.div`
   background: var(--second-color);
   padding: 35px 0 54px 0;
   margin-bottom: 30px;
+
   @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
-    padding: 35px 0 154px 0;
+    padding: 35px 0 90px 0;
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1024px) {
-  }
+  
   @media screen and (min-width: 1440px) {
+    padding: 35px 0 154px 0;
   }
 `;
 export const Title = styled.h2`
@@ -55,12 +51,9 @@ export const Title = styled.h2`
   line-height: 1.3;
   color: var(--text-color-second);
   margin-bottom: 24px;
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
     font-weight: 400;
-  }
-  @media screen and (min-width: 1024px) {
   }
   @media screen and (min-width: 1440px) {
     font-size: 50px;
@@ -76,44 +69,33 @@ export const Text = styled.p`
   & span {
     display: block;
   }
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
 
     margin-bottom: 143px;
   }
-  @media screen and (min-width: 1024px) {
-  }
+  
   @media screen and (min-width: 1440px) {
     font-size: 50px;
   }
 `;
 export const WrapPerson = styled.div`
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
   }
+  
 `;
 export const Person = styled.div`
   :not(:last-child) {
     margin-bottom: 50px;
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 600px) {
+    display: flex;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-    display: flex;
   }
 `;
 export const WrapPhoto = styled.div`
@@ -123,27 +105,13 @@ export const WrapPhoto = styled.div`
   background: var(--primary-color);
   padding: 8px 8px 32px 8px;
 
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     margin-right: 15px;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const WrapName = styled.div``;
 export const Photo = styled.img`
   border-radius: 4px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Name = styled.h3`
   font-family: var(--font-family);
@@ -151,14 +119,6 @@ export const Name = styled.h3`
   font-size: 50px;
   line-height: 1.3;
   color: var(--accent-color);
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Position = styled.p`
   font-family: var(--second-family);
@@ -170,12 +130,8 @@ export const Position = styled.p`
   & span {
     display: block;
   }
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     margin-bottom: 54px;
-  }
-  @media screen and (min-width: 1024px) {
   }
   @media screen and (min-width: 1440px) {
     font-size: 34px;
@@ -204,14 +160,6 @@ export const BtnPerson = styled.button`
     background: var(--primary-color);
     color: var(--second-color);
   }
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Icon = styled.svg`
   position: relative;
@@ -220,25 +168,14 @@ export const Icon = styled.svg`
   margin-left: 16px;
   fill: inherit;
   transition-duration: 250ms;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 
 export const BottomBlock = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     flex-direction: row;
-  }
-  @media screen and (min-width: 1024px) {
+    justify-content: space-around;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -248,7 +185,7 @@ export const BottomBlock = styled.div`
 export const Card = styled.div`
   background: var(--accent-color);
   width: 80%;
-  height: 280px;
+  padding: 26px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,12 +198,9 @@ export const Card = styled.div`
     border-radius: 32px 0 0 32px;
     align-self: end;
   }
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 24px) / 2);
     padding: 26px 0 40px 0;
-    justify-content: normal;
     :nth-child(1) {
       border-radius: 0 0 32px 32px;
       margin-bottom: 0;
@@ -275,9 +209,8 @@ export const Card = styled.div`
       border-radius: 0 0 32px 32px;
     }
   }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
+    height: 280px;
   }
 `;
 export const SubTitle = styled.h3`
@@ -287,17 +220,8 @@ export const SubTitle = styled.h3`
   line-height: 1;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-
   color: var(--text-color-second);
   margin-bottom: 16px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Descr = styled.p`
   font-family: var(--font-family);
@@ -307,12 +231,6 @@ export const Descr = styled.p`
 
   color: var(--text-color-second);
   margin-bottom: 33px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     font-size: 50px;
   }
@@ -340,13 +258,5 @@ export const Btn = styled.button`
   :hover {
     background: var(--text-color-second);
     color: var(--accent-color);
-  }
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;

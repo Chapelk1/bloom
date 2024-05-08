@@ -8,14 +8,8 @@ export const Title = styled.h2`
   text-align: center;
   color: var(--text-color-second);
   margin-bottom: 33px;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     font-size: 50px;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const SubTitle = styled.h3`
@@ -25,14 +19,6 @@ export const SubTitle = styled.h3`
   line-height: 1.3;
   color: var(--primary-color);
   margin-bottom: 29px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Descr = styled.p`
   font-family: var(--font-family);
@@ -41,14 +27,6 @@ export const Descr = styled.p`
   line-height: 130%;
   color: var(--primary-color);
   max-width: 309px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Btn = styled.button`
   position: absolute;
@@ -64,26 +42,10 @@ export const Btn = styled.button`
   opacity: 0;
   pointer-events: none;
   transition: transform 150ms linear;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Icon = styled.svg`
   width: 100%;
   height: 100%;
   stroke: white;
   fill: transparent;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;

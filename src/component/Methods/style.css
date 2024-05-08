@@ -28,9 +28,7 @@
 
 
 @media screen and (min-width: 768px) { 
-  .methodSwiper .swiper-slide {
-  padding: 32px 0 0 0;
-}
+ 
 }
 @media screen and (min-width: 1024px) { 
 }

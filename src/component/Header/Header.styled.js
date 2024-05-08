@@ -7,35 +7,25 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 6px 15px;
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
     padding: 0 15px;
+    align-items: center;
   }
-  @media screen and (min-width: 1024px) {
-  }
+  
   @media screen and (min-width: 1440px) {
     width: 1246px;
-
     margin: 0 auto;
-
-    align-items: center;
   }
 `;
 export const IconLogo = styled.svg`
   width: 120px;
   height: 50px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     width: 142px;
     height: 69px;
   }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-    
-  }
+  
 `;
 export const IconMenu = styled.svg`
   stroke: black;
@@ -93,39 +83,35 @@ export const Nav = styled.nav`
 `;
 
 export const List = styled.ul`
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     display: flex;
+    gap: 16px;
   }
 `;
 export const Item = styled.li`
   :not(:last-child) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     position: relative;
     overflow: hidden;
     padding-bottom: 2px;
     :not(:last-child) {
-      margin-right: 32px;
+      margin-right: 20px;
       margin-bottom: 0;
     }
-
     :hover a::after {
       transform: translateX(0%);
     }
   }
+  @media screen and (min-width: 1024px) {
+    :not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  
 `;
 export const Link = styled.a`
   font-family: var(--font-family);
@@ -133,11 +119,12 @@ export const Link = styled.a`
   font-size: 16px;
   line-height: 1.4;
   color: var(--text-color-second);
-  @media screen and (min-width: 320px) {
-  }
+  
   @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
   @media screen and (min-width: 1024px) {
+    font-size: 16px;
   }
   @media screen and (min-width: 1440px) {
     ::after {
@@ -148,7 +135,7 @@ export const Link = styled.a`
       background: var(--text-color-second);
       height: 2px;
       width: 100%;
-      transform: translateX(-101%);
+      transform: translateX(-105%);
       transition-duration: 250ms;
     }
   }

@@ -1,6 +1,7 @@
-import { Section, Container } from "component/Helpers/Helpers.styled";
+import { Section } from "component/Helpers/Helpers.styled";
 import {
   Text,
+  Container,
   Block,
   Wrap,
   Title,

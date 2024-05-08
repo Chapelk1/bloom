@@ -10,12 +10,8 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     flex-direction: row;
-  }
-  @media screen and (min-width: 1024px) {
   }
   @media screen and (min-width: 1440px) {
     width: 1246px;
@@ -26,17 +22,14 @@ export const WrapEvaluation = styled.div`
   padding: 12px 42px 12px 20px;
   background: #280f5b;
   margin-bottom: 50px;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-    margin-right: 165px;
+    margin-right: 110px;
     display: flex;
     align-items: center;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 165px;
   }
 `;
 export const IconL = styled.svg`
@@ -67,13 +60,7 @@ export const Text = styled.p`
 `;
 
 export const Nav = styled.nav`
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     display: flex;
   }
 `;
@@ -83,10 +70,11 @@ export const Wrap = styled.div`
     flex-direction: column;
   }
   @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
   }
   @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
     &:not(:last-child) {
       margin-right: 175px;
     }

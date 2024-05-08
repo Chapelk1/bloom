@@ -25,14 +25,13 @@ function Header({ render }) {
   return (
     <Head>
       <Container>
+        <a href="./">
+          <IconLogo>
+            <use href={icon + "#icon-logo"}></use>
+          </IconLogo>
+        </a>
         {render && (
           <>
-            <a href="./">
-              <IconLogo>
-                <use href={icon + "#icon-logo"}></use>
-              </IconLogo>
-            </a>
-
             <Nav>
               <List>
                 <Item>
@@ -57,11 +56,6 @@ function Header({ render }) {
 
         {!render && (
           <>
-            <a href="./">
-              <IconLogo>
-                <use href={icon + "#icon-logo"}></use>
-              </IconLogo>
-            </a>
             <MenuOpen onClick={toggleMenuOpen}>
               <IconMenu>
                 <use href={icon + "#icon-burger"}></use>
@@ -69,12 +63,12 @@ function Header({ render }) {
             </MenuOpen>
 
             <MobileMenu isOpen={menuIsOpen}>
+              <MenuClose onClick={toggleMenuOpen}>
+                <IconMenu>
+                  <use href={icon + "#icon-close"}></use>
+                </IconMenu>
+              </MenuClose>
               <Nav>
-                <MenuClose onClick={toggleMenuOpen}>
-                  <IconMenu>
-                    <use href={icon + "#icon-close"}></use>
-                  </IconMenu>
-                </MenuClose>
                 <List>
                   <Item>
                     <Link href="#career">Grow your career</Link>

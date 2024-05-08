@@ -10,12 +10,6 @@ export const Text = styled.p`
   margin-bottom: 63px;
   max-width: 738px;
   text-align: start;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     font-size: 50px;
   }
@@ -29,14 +23,6 @@ export const Name = styled.h3`
   max-width: 340px;
   text-align: end;
   margin-bottom: 4px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Position = styled.p`
   font-family: var(--font-family);
@@ -47,14 +33,6 @@ export const Position = styled.p`
   max-width: 340px;
   text-align: end;
   margin-bottom: 17px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Descr = styled.p`
   font-family: var(--font-family);
@@ -64,14 +42,6 @@ export const Descr = styled.p`
   color: var(--text-color-second);
   max-width: 340px;
   text-align: start;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Title = styled.h2`
   font-family: var(--second-family);
@@ -81,14 +51,6 @@ export const Title = styled.h2`
   text-align: center;
   color: var(--text-color-second);
   margin-bottom: 88px;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Btn = styled.button`
   font-family: var(--font-family);
@@ -115,14 +77,6 @@ export const Btn = styled.button`
   :hover svg {
     fill: var(--primary-color);
   }
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const Icon = styled.svg`
   width: 15px;
@@ -130,12 +84,4 @@ export const Icon = styled.svg`
   margin-left: 7px;
   fill: var(--second-color);
   transition: all 250ms linear;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
-  }
 `;

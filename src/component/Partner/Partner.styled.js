@@ -1,14 +1,8 @@
 import styled from "@emotion/styled";
-export const Section = styled.div`
+export const Section = styled.section`
   padding: 80px 0;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
     padding: 160px 0;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const Container = styled.div`
@@ -18,29 +12,27 @@ export const Container = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) {
-    overflow: unset;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1024px) {
+    overflow: unset;
   }
   @media screen and (min-width: 1440px) {
     flex-direction: row;
     width: 1246px;
     display: flex;
     justify-content: space-between;
-    padding-left: ${(prop) => {
-      // if (prop.position === 'left') {
-      //   return 'auto';
-      // } else {
-      //   return 'auto';
-      // }
-    }};
   }
 `;
 export const Wrap = styled.div`
   position: relative;
+  max-width: 500px;
+  @media screen and (min-width: 1440px) {
+    max-width: unset;
+  }
 `;
 export const Name = styled.h2`
   font-family: var(--font-family);
@@ -76,16 +68,11 @@ export const Text = styled.p`
   span {
     display: block;
   }
+
 `;
 export const Logo = styled.img``;
 export const Arrow = styled.img`
   display: none;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     display: unset;
     position: absolute;
@@ -107,23 +94,15 @@ export const Arrow = styled.img`
 `;
 export const PhotoCard = styled.img`
   border-radius: 2px;
-
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     width: 317px;
     height: 385px;
-  }
-  @media screen and (min-width: 1024px) {
-  }
-  @media screen and (min-width: 1440px) {
   }
 `;
 export const WrapSwiper = styled.div`
   position: relative;
   margin-bottom: 40px;
-  @media screen and (min-width: 320px) {
-  }
+  width: 280px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     order: ${(prop) => {
@@ -137,13 +116,13 @@ export const WrapSwiper = styled.div`
       if (prop.position === "left") {
         return "0 33px 0 0";
       } else {
-        return "0 16px 0 0";
+        return "0 0 0 16px";
       }
     }};
   }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
+    width: 346px;
+    height: 451px;
   }
 `;
 
@@ -154,12 +133,6 @@ export const Circle = styled.img`
   width: 80px;
   height: 80px;
   z-index: 10;
-  @media screen and (min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1024px) {
-  }
   @media screen and (min-width: 1440px) {
     right: -40px;
     bottom: -40px;
